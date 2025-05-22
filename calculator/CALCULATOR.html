@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <meta charset="UTF-8">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="../website/website.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/8f/a1/03/8fa103e4c376658e3d74cf7ff65f6a8b.jpg" type="image/x-icon">
+  <style>
+    body {
+      
+      justify-content: center;
+      margin: 0px;
+
+    }
+    .calculator {
+      border: 2px solid #444;
+      padding: 20px;
+      border-radius: 10px;
+      width: 240px;
+      background: #f9f9f9;
+      margin: auto;
+      
+    }
+    #display {   
+      width: 100%;
+      height: 40px;
+      font-size: 18px;
+      text-align: right;
+      margin-bottom: 10px;
+      padding-right: 10px;
+    }
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+    .buttons button {
+      padding: 15px;
+      font-size: 18px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body style="background-image:url(https://m.media-amazon.com/images/S/pv-target-images/dce4ae90017ed2b75ef8f942d7d128d2b873dd2c66d7e690646fe939a1846013.jpg); background-size: 100vh;background-size: 100vw;">
+    <header class="heading">
+            <img src="https://i.redd.it/gpgs9aohta9a1.gif" alt="logo" height="135px" weight="50px" >
+            <!-- <img src="https://i.pinimg.com/736x/8f/a1/03/8fa103e4c376658e3d74cf7ff65f6a8b.jpg" alt="logo" height="150px" weight="150px" > -->
+           <ul >
+                <li >🏠<a href="../website/index.html" class="" onclick="fn(1)">Home</a></li>
+                <li >➕<a href="../add/calc.html" class="" onclick="fn(2)">Add</a></li>
+                <li >🧮<a href="../calculator/CALCULATOR.html" class="active" onclick="fn(3)">Calclutor</a></li>
+                <li >🌅<a href="../degree/degree.html" class="" onclick="fn(4)">Degree convertor</a></li>
+                <li >⏱️<a href="../stopwatch/stopwatch.html" class="" onclick="fn(5)">Stop watch</a></li>
+            </ul>
+    </header>
+    <marquee direction="left" loop="infinite" id="moving"><img src="https://i.giphy.com/fstV57yumJ3dMUaYPr.webp" alt="" height="100px"><img src="https://tcrf.net/images/9/9c/Jerryescapeunusedtomrun.gif" alt="" height="100px"></marquee>
+
+    <!-- <div id="background-img">
+        <img src="https://nodwingaming.com/wp-content/uploads/2024/07/Pokemon-Unite-World-Championship-India-Qualifier.jpg" alt="logo">
+    </div> -->
+    <br>
+    <br>
+  <div class="calculator">
+    <input type="text" id="display" readonly>
+    <div class="buttons">
+      <button onclick="clearDisplay()">C</button>
+      <button onclick="deleteLast()">❌</button>
+      <button onclick="appendValue('%')">%</button>
+      <button onclick="appendValue('/')">/</button>
+
+      <button onclick="appendValue('7')">7</button>
+      <button onclick="appendValue('8')">8</button>
+      <button onclick="appendValue('9')">9</button>
+      <button onclick="appendValue('*')">*</button>
+
+      <button onclick="appendValue('4')">4</button>
+      <button onclick="appendValue('5')">5</button>
+      <button onclick="appendValue('6')">6</button>
+      <button onclick="appendValue('-')">-</button>
+
+      <button onclick="appendValue('1')">1</button>
+      <button onclick="appendValue('2')">2</button>
+      <button onclick="appendValue('3')">3</button>
+      <button onclick="appendValue('+')">+</button>
+
+      <button onclick="appendValue('0')">0</button>
+      <button onclick="appendValue('.')">.</button>
+      <button onclick="calculate()">=</button>
+    </div>
+  </div>
+
+  <script  src="../calculator/CALCULATOR.js" defer></script>
+  <script src="../website/website.js" defer></script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+#moving{
+    /* margin-left: 150px; */
+    position: fixed;
+    top: 50px;
+    margin-left: 250px;
+}
+
+a{
+    font-size: x-large;
+    color: white;
+    text-decoration: none;
+}
+li{
+    list-style-type:none;
+   
+    color: white;
+}
+.heading,ul{
+    /* position:fixed;
+    z-index: -1; */
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    position:sticky;
+    top:0px;
+    /* background-image:url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ed3b062b-a74f-40e9-8e01-15e668c58f50/d9wnjmb-078a0ccd-773b-43f7-b131-13fa7f8dc47d.jpg/v1/fill/w_1024,h_717,q_75,strp/pokemon_world_by_craftymarten_d9wnjmb-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzE3IiwicGF0aCI6IlwvZlwvZWQzYjA2MmItYTc0Zi00MGU5LThlMDEtMTVlNjY4YzU4ZjUwXC9kOXduam1iLTA3OGEwY2NkLTc3M2ItNDNmNy1iMTMxLTEzZmE3ZjhkYzQ3ZC5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.bM4zElfaaOrEEYPD6IMRyN5YSWYTILFEUgemPOikm_E);
+    background-size: 50vh; */
+        
+}
+ul{
+    padding-top: px;
+    width: 1000px;
+    justify-content: space-around;
+}
+body{
+    /* padding-top: 40%; */
+}
+#background-img{
+    /* margin-top: 100%; */
+    margin:0px;
+    
+    /* background-image: url(https://i.pinimg.com/originals/54/c3/92/54c392aa064dbefe7365f09e2e119d49.gif); */
+    background-image: url(https://cdna.artstation.com/p/assets/images/images/019/624/796/large/david-oswald-do-pokemon.jpg?1564330939);
+    /* background-image: url(https://i.pinimg.com/736x/af/bf/92/afbf9291c340f45b7041af98d4cdaf12.jpg); */
+    background-size: 150vh;
+
+    background-size: 150vw;
+    /* background-size: 100vw; */
+     background-repeat:repeat;
+    background-position:center;
+
+    background-attachment:fixed;
+    
+   
+}
+.active{
+    color:deepskyblue;
+    /* background-color: white; */
+    text-decoration: underline;
+    
+}
+h1{
+    background-image:url(https://i.pinimg.com/736x/8f/a1/03/8fa103e4c376658e3d74cf7ff65f6a8b.jpg);
+    background-size: 10vh; 
+    margin: auto;
+    border: 10px solid black;
+    text-align: center;
+    width: fit-content;
+}
+.click{
+    color: red;
+}
+p{
+    width: fit-content;
+    margin:10%;
+}
+.divlogo-upward{
+    
+    height: 135px;
+}
+#logo-upward{
+    animation-name: logo-upward;
+    animation-duration: 2s;
+    animation-timing-function:linear;
+    animation-iteration-count: infinite;
+}
+
+/* .bring-front {
+    position: absolute;
+    z-index: 100;
+} */
+/* @keyframes  logo-upward{
+    from{
+            margin-bottom: -300px;
+        }
+        to{
+            margin-bottom: 0px;
+    } */
+/* } */

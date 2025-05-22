@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP WATCH</title>
+    <link rel="stylesheet" href="../website/website.css">
+    <link rel="shortcut icon" href="https://i.pinimg.com/736x/8f/a1/03/8fa103e4c376658e3d74cf7ff65f6a8b.jpg" type="image/x-icon">
+    <style>
+        #stop{
+            border: 1px solid black;
+            width:fit-content;
+            padding: 1%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body style="background-image:url(https://m.media-amazon.com/images/S/pv-target-images/dce4ae90017ed2b75ef8f942d7d128d2b873dd2c66d7e690646fe939a1846013.jpg); background-size: 100vh;background-size: 100vw;">
+
+    <header class="heading">
+            <img src="https://i.redd.it/gpgs9aohta9a1.gif" alt="logo" height="135px" weight="50px" >
+            <!-- <img src="https://i.pinimg.com/736x/8f/a1/03/8fa103e4c376658e3d74cf7ff65f6a8b.jpg" alt="logo" height="150px" weight="150px" > -->
+           <ul >
+                <li >🏠<a href="../website/index.html" class="" onclick="fn(1)">Home</a></li>
+                <li >➕<a href="../add/calc.html" class="" onclick="fn(2)">Add</a></li>
+                <li >🧮<a href="../calculator/CALCULATOR.html" class="" onclick="fn(3)">Calclutor</a></li>
+                <li >🌅<a href="../degree/degree.html" class="" onclick="fn(4)">Degree convertor</a></li>
+                <li >⏱️<a href="../stopwatch/stopwatch.html" class="active" onclick="fn(5)">Stop watch</a></li>
+            </ul>
+    </header>
+    <marquee direction="left" loop="infinite" id="moving"><img src="https://i.giphy.com/fstV57yumJ3dMUaYPr.webp" alt="" height="100px"><img src="https://tcrf.net/images/9/9c/Jerryescapeunusedtomrun.gif" alt="" height="100px"></marquee>
+
+    <!-- <div id="background-img">
+        <img src="https://nodwingaming.com/wp-content/uploads/2024/07/Pokemon-Unite-World-Championship-India-Qualifier.jpg" alt="logo">
+    </div> -->
+    <br>
+    
+    <div id="stop">
+    <span id="hour">00</span>
+    <span>:</span>
+    <span id="min">00</span>
+    <span>:</span>
+    <span id="sec">00</span>
+    
+    
+    <br/>
+    <button onclick="start()"> START </button>
+    <button onclick="stop()"> STOP</button>
+    <button onclick="reset()"> RESET </button>
+    </div>
+    <script src="./stopwatch.js"></script>
+    <script src="../website/website.js" defer></script>
+</body>
+</html>
